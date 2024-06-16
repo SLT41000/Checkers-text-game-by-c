@@ -387,9 +387,9 @@ void rule(char arr[7][7]) {
 		do {
 			printf("select chess to move\n");
 			printf("row ");
-			scanf_s("%d", &i);
+			scanf("%d", &i);
 			printf("colum ");
-			scanf_s("%d", &j);
+			scanf("%d", &j);
 		} while (i <= 0 || i > 7 || j <= 0 || j > 7);
 		i=i-1;
 		j=j-1;
@@ -398,7 +398,7 @@ void rule(char arr[7][7]) {
 				
 				do {
 					printf("select position to move ");
-					scanf_s("%d %d", &x, &y);
+					scanf("%d %d", &x, &y);
 				}while(x <= 0 || x > 7 || y <= 0 || y > 7);
 				x=x-1;
 				y = y - 1;
@@ -429,7 +429,7 @@ void rule(char arr[7][7]) {
 			} 
 			else if (arr[i][j] == 'O') {
 				printf("select position to move ");
-				scanf_s("%d %d", &x, &y);
+				scanf("%d %d", &x, &y);
 				x = x - 1;
 				y = y - 1;
 
